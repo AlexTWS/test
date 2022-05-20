@@ -6,7 +6,7 @@
     "package": "aws cloudformation package --profile dashlabs4 --template cloudformation/dash-sdk-ecs-v1.yml --s3-bucket=dashscan --output-template-file output/template.yml",
     "deploy": "aws cloudformation deploy --profile dashlabs4 --template-file output/template.yml --stack-name dashsdk-iac-scan-stack2 --capabilities CAPABILITY_NAMED_IAM --tags project=dashsdk",
     "delete": "yarn setenv && aws cloudformation delete-stack --stack-name dashsdk-iac-scan-stack2",
-    "push": "yarn setenv && yarn package && yarn deploy" //fdsafsdafas
+    "push": "yarn setenv && yarn package && yarn deploy" #fdsafsdafas
   },
   "dependencies": {},
   "devDependencies": {
